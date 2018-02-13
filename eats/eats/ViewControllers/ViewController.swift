@@ -10,14 +10,23 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet var nameField: UITextField!
-    @IBOutlet var notaField: UITextField!
+    @IBOutlet var nameField: UITextField?
+    @IBOutlet var notaField: UITextField?
     
     @IBAction func add() {
-        let name = nameField.text
-        let nota = notaField.text
-        print("comi \(String(describing: name)) e estou \(String(describing: nota)) satisfeito!")
+    
+        if nameField == nil || notaField == nil {
+            return
+        }
+        
+        let name = nameField!.text!
+        
+        if let nota = Int(notaField!.text!) {
+        
+        let meal = Meal(name: name, nota: nota)
+        print("comi \(meal.name) e estou \(meal.nota) satisfeito!")
+        
+        }
     }
 
 }
-
