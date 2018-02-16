@@ -8,10 +8,9 @@
 
 import UIKit
 
-class MealsTableViewController: UITableViewController, ViewControllerDelegate {
+class MealsTableViewController: UITableViewController, addAMealDelegate {
     
-    var meals = [Meal(name: "Lazanha", nota: 10),
-                 Meal(name: "Sushi", nota: 7)]
+    var meals = Array<Meal> ()
     
     // add in array
     func add(_ meal: Meal) {

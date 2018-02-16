@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     
     @IBOutlet var nameField: UITextField!
     @IBOutlet var notaField: UITextField!
-    var delegate: ViewControllerDelegate?
+    var delegate: addAMealDelegate?
     
     @IBAction func add() {
         

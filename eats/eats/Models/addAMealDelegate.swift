@@ -1,5 +1,5 @@
 //
-//  MyDelegate.swift
+//  addAMealDelegate.swift
 //  eats
 //
 //  Created by Deyvis Ferreira on 16/02/2018.
@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol ViewControllerDelegate {
+protocol addAMealDelegate {
     func add(_ meal: Meal)
 }
