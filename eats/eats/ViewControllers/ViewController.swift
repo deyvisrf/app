@@ -24,6 +24,7 @@ class ViewController: UIViewController {
         let meal = Meal(name: name, nota: nota)
         print("comi \(meal.name) e estou \(meal.nota) satisfeito!")
         
+        // remove screen duplicate
+        navigationController?.popViewController(animated: true)
     }
-
 }
