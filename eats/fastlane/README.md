@@ -15,9 +15,9 @@ Install _fastlane_ using
 or alternatively using `brew cask install fastlane`
 
 # Available Actions
-### uitest
+### ui_test
 ```
-fastlane uitest
+fastlane ui_test
 ```
 Run UI Test Parallel
 

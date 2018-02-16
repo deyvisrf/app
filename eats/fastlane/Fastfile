@@ -19,9 +19,9 @@ platform :ios do
 end
 
 desc "Run UI Test Parallel"
-  lane :uitest do
+  lane :ui_test do
     scan(
       scheme:"eats",
-      devices: ["iPhone 7", "iPhone 5s"]
+      devices: ["iPhone 7", "iPhone 5s", "iPhone 6"]
     )
     end
