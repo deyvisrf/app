@@ -10,8 +10,20 @@ import UIKit
 
 class MealsTableViewController: UITableViewController {
     
-    let meals = [Meal(name: "Lazanha", nota: 10),
+    var meals = [Meal(name: "Lazanha", nota: 10),
                  Meal(name: "Sushi", nota: 7)]
+    
+    // add in array
+    func add(meal: Meal) {
+        meals.append(meal)
+        tableView.reloadData()
+    }
+    
+    // reference a view controller
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let view = segue.destination as! ViewController
+        view.mealsTable = self
+    }
     
     // numbers of row
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

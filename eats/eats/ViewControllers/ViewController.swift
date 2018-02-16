@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     
     @IBOutlet var nameField: UITextField!
     @IBOutlet var notaField: UITextField!
+    var mealsTable: MealsTableViewController?
     
     @IBAction func add() {
         
@@ -23,6 +24,9 @@ class ViewController: UIViewController {
         // array of meal
         let meal = Meal(name: name, nota: nota)
         print("comi \(meal.name) e estou \(meal.nota) satisfeito!")
+        
+        // get function for add when click on button
+        mealsTable!.add(meal: meal)
         
         // remove screen duplicate
         navigationController?.popViewController(animated: true)
