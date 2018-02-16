@@ -36,7 +36,7 @@
                     <navigationItem key="navigationItem" id="cga-iU-uiZ">
                         <barButtonItem key="rightBarButtonItem" title="Nova avaliação" id="ix4-6p-Yfo">
                             <connections>
-                                <segue destination="BYZ-38-t0r" kind="show" id="rZw-Ph-s1f"/>
+                                <segue destination="BYZ-38-t0r" kind="show" identifier="addMeal" id="rZw-Ph-s1f"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

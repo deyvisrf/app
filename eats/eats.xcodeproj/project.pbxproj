@@ -18,6 +18,7 @@
 		CD0799B120336B2600FB4403 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0799B020336B2600FB4403 /* Item.swift */; };
 		CD7C442E2035E9E100DE92BF /* MealsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7C442D2035E9E100DE92BF /* MealsTableViewController.swift */; };
 		CD7C44302037151100DE92BF /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7C442F2037151100DE92BF /* constants.swift */; };
+		CD7C44322037419700DE92BF /* ViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7C44312037419700DE92BF /* ViewControllerDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		CD0799B020336B2600FB4403 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		CD7C442D2035E9E100DE92BF /* MealsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsTableViewController.swift; sourceTree = "<group>"; };
 		CD7C442F2037151100DE92BF /* constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
+		CD7C44312037419700DE92BF /* ViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 			children = (
 				CD0799AE203369F500FB4403 /* Meal.swift */,
 				CD0799B020336B2600FB4403 /* Item.swift */,
+				CD7C44312037419700DE92BF /* ViewControllerDelegate.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -297,6 +300,7 @@
 			files = (
 				CD7C442E2035E9E100DE92BF /* MealsTableViewController.swift in Sources */,
 				CD0799B120336B2600FB4403 /* Item.swift in Sources */,
+				CD7C44322037419700DE92BF /* ViewControllerDelegate.swift in Sources */,
 				CD07997F20335C4800FB4403 /* ViewController.swift in Sources */,
 				CD0799AF203369F500FB4403 /* Meal.swift in Sources */,
 				CD07997D20335C4800FB4403 /* AppDelegate.swift in Sources */,

@@ -8,21 +8,25 @@
 
 import UIKit
 
-class MealsTableViewController: UITableViewController {
+class MealsTableViewController: UITableViewController, ViewControllerDelegate {
     
     var meals = [Meal(name: "Lazanha", nota: 10),
                  Meal(name: "Sushi", nota: 7)]
     
     // add in array
-    func add(meal: Meal) {
+    func add(_ meal: Meal) {
         meals.append(meal)
         tableView.reloadData()
     }
     
     // reference a view controller
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let view = segue.destination as! ViewController
-        view.mealsTable = self
+        
+        // check identifier the segue of next screen
+        if (segue.identifier == "addMeal") {
+            let view = segue.destination as! ViewController
+            view.delegate = self
+        }
     }
     
     // numbers of row

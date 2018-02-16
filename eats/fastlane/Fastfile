@@ -17,3 +17,11 @@ platform :ios do
     # add actions here: https://docs.fastlane.tools/actions
   end
 end
+
+desc "Run UI Test Parallel"
+  lane :uitest do
+    scan(
+      scheme:"eats",
+      devices: ["iPhone 7", "iPhone 5s"]
+    )
+    end
