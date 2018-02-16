@@ -17,6 +17,7 @@
 		CD0799AF203369F500FB4403 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0799AE203369F500FB4403 /* Meal.swift */; };
 		CD0799B120336B2600FB4403 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0799B020336B2600FB4403 /* Item.swift */; };
 		CD7C442E2035E9E100DE92BF /* MealsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7C442D2035E9E100DE92BF /* MealsTableViewController.swift */; };
+		CD7C44302037151100DE92BF /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7C442F2037151100DE92BF /* constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		CD0799AE203369F500FB4403 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		CD0799B020336B2600FB4403 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		CD7C442D2035E9E100DE92BF /* MealsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsTableViewController.swift; sourceTree = "<group>"; };
+		CD7C442F2037151100DE92BF /* constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 			children = (
 				CD07999C20335C4800FB4403 /* eatsUITests.swift */,
 				CD07999E20335C4800FB4403 /* Info.plist */,
+				CD7C442F2037151100DE92BF /* constants.swift */,
 			);
 			path = eatsUITests;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD07999D20335C4800FB4403 /* eatsUITests.swift in Sources */,
+				CD7C44302037151100DE92BF /* constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
