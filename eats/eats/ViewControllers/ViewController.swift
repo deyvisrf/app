@@ -10,25 +10,20 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet var nameField: UITextField?
-    @IBOutlet var notaField: UITextField?
+    @IBOutlet var nameField: UITextField!
+    @IBOutlet var notaField: UITextField!
     
     @IBAction func add() {
-        // check are field null
-        if nameField == nil || notaField == nil {
+        
+        // check if is nil, empty and value is int
+        guard let nota = Int(notaField!.text!), let name = nameField.text, name != "" else {
             return
         }
-        
-        let name = nameField!.text!
-        
-        // check if filed have a content
-        if let nota = Int(notaField!.text!) {
         
         // array of meal
         let meal = Meal(name: name, nota: nota)
         print("comi \(meal.name) e estou \(meal.nota) satisfeito!")
         
-        }
     }
 
 }
