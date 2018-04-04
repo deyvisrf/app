@@ -53,7 +53,7 @@ class eatsUITests: XCTestCase {
         let label = app.staticTexts["Parmegiana"]
         
         nameTextField.tap()
-        nameTextField.typeText("Parmegiana")
+        nameTextField.typeText("Parmegianav")
         
         notatextField.tap()
         notatextField.typeText("10")
