@@ -110,7 +110,9 @@
       </section>
       <section class="right">
         <section id="counters">
-          <h2 id="test-count"><span class="number">0</span> tests</h2>
+          <h2 id="test-count"><span class="number">4</span> tests</h2>
+          
+            <h2 id="fail-count"><span class="number">1</span> failures</h2>
           
         </section>
         <section id="segment-bar">
@@ -119,6 +121,86 @@
       </section>
     </header>
     <section id="test-suites">
+      
+        
+        <section class="test-suite failing" id="eatsUITests.eatsUITests">
+          <section class="heading" onclick="toggleTests(this);">
+            <h3 class="title">eatsUITests.eatsUITests</h3>
+          </section>
+          <section class="tests">
+            <table>
+            
+              
+              <tr class="test passing "  onclick="toggleDetails('testAddMeals');">
+                <td>
+                  
+                    <h3 class="time">16.155s</h3>
+                  
+                </td>
+                <td><h3 class="title">testAddMeals</h3></td>
+              </tr>
+              
+            
+              
+              <tr class="test failing odd"  onclick="toggleDetails('testnew');">
+                <td>
+                  
+                </td>
+                <td><h3 class="title">testnew</h3></td>
+              </tr>
+              
+                <tr class="details failing testnew">
+                  <td></td>
+                  <td>
+                    
+                      <section class="test-detail reason">Asynchronous wait failed: Exceeded timeout of 5 seconds, with unfulfilled expectations: "Expect predicate `exists == 1` for object "Parmegiana" StaticText".</section>
+                    
+                    
+                      <section class="test-detail snippet"></section>
+                      <section class="test-detail">constants.swift:17</section>
+                    
+                    
+                  </td>
+                </tr>
+              
+            
+            </table>
+          </section>
+        </section>
+      
+        
+        <section class="test-suite passing" id="eatsTests.eatsTests">
+          <section class="heading" onclick="toggleTests(this);">
+            <h3 class="title">eatsTests.eatsTests</h3>
+          </section>
+          <section class="tests">
+            <table>
+            
+              
+              <tr class="test passing "  onclick="toggleDetails('testExample');">
+                <td>
+                  
+                    <h3 class="time">0.002s</h3>
+                  
+                </td>
+                <td><h3 class="title">testExample</h3></td>
+              </tr>
+              
+            
+              
+              <tr class="test passing odd"  onclick="toggleDetails('testPerformanceExample');">
+                <td>
+                  
+                    <h3 class="time">0.271s</h3>
+                  
+                </td>
+                <td><h3 class="title">testPerformanceExample</h3></td>
+              </tr>
+              
+            
+            </table>
+          </section>
+        </section>
       
     </section>
     <footer>Report generated with <a href="https://github.com/supermarin/xcpretty">xcpretty</a></footer>
