@@ -24,6 +24,26 @@ class eatsUITests: XCTestCase {
     }
     
     func testAddMeals() {
+        let nameTextField = app.textFields["ex.: Lazanha"]
+        let notatextField = app.textFields["1 ~ 5"]
+        let label = app.staticTexts["Parmegiana"]
+        
+        app.buttons["Nova avaliação"].tap()
+        
+        nameTextField.tap()
+        nameTextField.typeText("Parmegiana")
+        
+        notatextField.tap()
+        notatextField.typeText("10")
+        
+        app.buttons["Adicionar"].tap()
+        
+        waitForElementToAppear(element: label)
+        XCTAssert(label.exists)
+        
+    }
+    
+    func testNew() {
         
         app.buttons["Nova avaliação"].tap()
         
@@ -32,7 +52,7 @@ class eatsUITests: XCTestCase {
         let label = app.staticTexts["Parmegiana"]
         
         nameTextField.tap()
-        nameTextField.typeText("Parmegiana")
+        nameTextField.typeText("Lazanha")
         
         notatextField.tap()
         notatextField.typeText("10")
