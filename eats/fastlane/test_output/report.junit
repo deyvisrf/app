@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <testsuites name='eatsTests.xctest' tests='4' failures='1'>
   <testsuite name='eatsUITests.eatsUITests' tests='2' failures='1'>
-    <testcase classname='eatsUITests.eatsUITests' name='testAddMeals' time='16.155'/>
+    <testcase classname='eatsUITests.eatsUITests' name='testAddMeals' time='15.041'/>
     <testcase classname='eatsUITests.eatsUITests' name='testnew'>
       <failure message='Asynchronous wait failed: Exceeded timeout of 5 seconds, with unfulfilled expectations: &quot;Expect predicate `exists == 1` for object &quot;Parmegiana&quot; StaticText&quot;.'>constants.swift:17</failure>
     </testcase>
   </testsuite>
   <testsuite name='eatsTests.eatsTests' tests='2' failures='0'>
-    <testcase classname='eatsTests.eatsTests' name='testExample' time='0.002'/>
-    <testcase classname='eatsTests.eatsTests' name='testPerformanceExample' time='0.271'/>
+    <testcase classname='eatsTests.eatsTests' name='testExample' time='0.001'/>
+    <testcase classname='eatsTests.eatsTests' name='testPerformanceExample' time='0.270'/>
   </testsuite>
 </testsuites>

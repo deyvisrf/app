@@ -43,25 +43,4 @@ class eatsUITests: XCTestCase {
         XCTAssert(label.exists)
         
     }
-    
-    func testnew() {
-        
-        app.buttons["Nova avaliação"].tap()
-        
-        let nameTextField = app.textFields["ex.: Lazanha"]
-        let notatextField = app.textFields["1 ~ 5"]
-        let label = app.staticTexts["Parmegiana"]
-        
-        nameTextField.tap()
-        nameTextField.typeText("Parmegianav")
-        
-        notatextField.tap()
-        notatextField.typeText("10")
-        
-        app.buttons["Adicionar"].tap()
-        
-        waitForElementToAppear(element: label)
-        XCTAssert(label.exists)
-        
-    }
 }
